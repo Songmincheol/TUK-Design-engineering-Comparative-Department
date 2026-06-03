@@ -1,0 +1,116 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Pretendard', sans-serif; background-color: #ffffff; color:#333; }
+.wrap { width: 1440px; margin: 0 auto; background-color: #fff;}
+
+/* HEADER & FOOTER */
+header { width: 1440px; height: 103.96px; display: flex; justify-content: space-between; align-items: center; padding: 0 80px; background-color: #fff; border-bottom: 1px solid #E9E9E9;}
+.logo img { height: 62px; }
+nav ul { display: flex; list-style: none; gap: 60px; }
+nav a { text-decoration: none; color: #333333; font-size: 16px; font-weight: 500; position: relative; padding-bottom: 8px; transition: color 0.3s ease; }
+nav a.active-home { color: #27B4F5; font-weight: 700; }
+nav a.active-home::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #27B4F5; }
+nav a.active-mentoring { color: #2AAA5D; font-weight: 700; }
+nav a.active-mentoring::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #2AAA5D; }
+nav a.active-exhibition { color: #FF9A23; font-weight: 700; }
+nav a.active-exhibition::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #FF9A23; }
+nav a.active-notice { color: #F16449; font-weight: 700; }
+nav a.active-notice::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #F16449; }
+
+footer { width: 1440px; height: 289px; background-color: #f6f6f6; padding: 50px 70px; display: flex; flex-direction: column; justify-content: space-between; border-top: 1px solid #eaeaea; }
+.footer-top { display: flex; justify-content: space-between; }
+.footer-left .footer-logo { margin-bottom: 8px; }
+.footer-left .footer-logo img { height: 58px; }
+.footer-left p { font-size: 12px; color: #666; line-height: 1.6; }
+.footer-right { display: flex; gap: 80px; }
+.footer-info-block h4 { font-size: 15px; font-weight: 700; color: #333; margin-bottom: 15px; }
+.footer-info-block p { font-size: 14px; color: #666; margin-bottom: 8px; }
+.footer-bottom { text-align: center; border-top: 1px solid #e0e0e0; padding-top: 25px; font-size: 13px; color: #888; }
+
+/* COMMON SECTION STYLES */
+main { padding: 0; }
+section { padding: 96px 80px; width: 1440px; }
+.section-title { margin-bottom: 40px; }
+.section-title .sub-label { display: block; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.section-title h3 { font-size: 26px; font-weight: 800; color: #222; margin-bottom: 10px; }
+.section-title p { font-size: 15px; color: #777; }
+.orange-text { color: #FF9A23 !important; }
+
+/* ================= SECTION 1 : 과제전 소개 ================= */
+.section1 { display: flex; justify-content: space-between; align-items: center; background-color: #fff; }
+.intro-text { flex: 1; padding-right: 60px; }
+.badge.orange { display: inline-flex; align-items: center; background-color: #FF9A23; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-bottom: 20px; }
+.icon-comparative { width: 16.5px; height: 12px; margin-right: 8px; }
+.intro-text h2 { font-size: 40px; font-weight: 700; line-height: 1.3; margin-bottom: 20px; }
+.intro-text p { font-size: 24px; color: #666; line-height: 1.6; }
+.shadow-img { width: 548px; height: 443px; border-radius: 30px; object-fit: cover; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+
+/* ================= SECTION 2 : 과제전 혜택 ================= */
+.section2 { background-color: #FAFAFA; }
+.benefit-cards { display: flex; gap: 30px; }
+.b-card { flex: 1; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 40px; }
+.icon-circle { display: flex; justify-content: center; align-items: center; width: 60px; height: 60px; background-color: #FFF4E5; border-radius: 50%; margin-bottom: 20px; }
+.icon-mileage { width: 10px; height: 20px; }
+.icon-prize { width: 22px; height: 16px; }
+.icon-presentation { width: 24px; height: 12px; }
+.b-card h4 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.b-card p { font-size: 15px; color: #666; line-height: 1.5; }
+
+/* ================= SECTION 3 : 역대 수상작 ================= */
+.section3 { background-color: #fff; }
+.section-header-row { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
+.year-tabs { display: flex; gap: 10px; }
+.year-tab { border: 1px solid #ddd; background: #fff; padding: 8px 24px; border-radius: 30px; font-family: 'Pretendard'; font-size: 15px; font-weight: 600; color: #888; cursor: pointer; transition: 0.3s; }
+.year-tab.active { border-color: #FF9A23; color: #FF9A23; }
+
+.archive-grid-ex { display: flex; gap: 24px; }
+.archive-grid-ex.hidden { display: none; }
+.archive-card { flex: 1; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #eee; }
+.archive-card .img-box { height: 220px; background-color: #d1d1d1; background-size: cover; background-position: center; }
+.archive-card .card-content { padding: 24px; }
+.archive-card .tags { margin-bottom: 12px; display: flex; gap: 8px; align-items: center; }
+.archive-card .tag { font-size: 11px; padding: 4px 10px; border-radius: 20px; font-weight: 700; }
+.archive-card .tag.outline { border: 1px solid #ddd; color: #555; }
+.archive-card .tag.black { background-color: #333; color: #fff; }
+.archive-card .tag.orange-bg { background-color: #FF9A23; color: #fff; }
+.archive-card h4 { font-size: 18px; font-weight: 800; margin-bottom: 10px; color: #222; }
+.archive-card p { font-size: 14px; color: #666; line-height: 1.5; }
+
+/* ================= SECTION 4 : 영상 재생 ================= */
+.section4 { background-color: #F8F8F8; }
+.video-container { display: flex; gap: 30px; margin-top: 30px; }
+.video-card { flex: 1; border-radius: 12px; overflow: hidden; background: #fff; border: 1px solid #eee; }
+.video-thumb { height: 350px; background-color: #111; background-size: cover; background-position: center; position: relative; display: flex; justify-content: center; align-items: center; }
+.play-btn-circle { background: transparent; border: none; cursor: pointer; transition: transform 0.2s; }
+.play-btn-circle:hover { transform: scale(1.05); }
+.icon-play { width: 90px; height: 90px; }
+.time-badge { position: absolute; bottom: 15px; right: 15px; background: rgba(0,0,0,0.8); color: #fff; font-size: 12px; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
+.video-info { padding: 24px; }
+.video-info h4 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.video-info p { font-size: 14px; color: #888; display: flex; align-items: center; gap: 8px; }
+
+/* ==================================================
+   애니메이션 (Fade & Slide) 정의 (sub1.css, sub2.css 공통)
+   ================================================== */
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Section 1 텍스트: 왼쪽에서 오른쪽으로 등장 */
+.section1 .intro-text {
+    flex: 1; 
+    padding-right: 60px;
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+/* Section 1 이미지: 오른쪽에서 왼쪽으로 등장 */
+.section1 .intro-image {
+    animation: slideInRight 1s ease-out forwards;
+}

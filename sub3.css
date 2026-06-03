@@ -1,0 +1,114 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Pretendard', sans-serif; background-color: #FAFAFA; color: #333; }
+.wrap { width: 1440px; margin: 0 auto; background-color: #FAFAFA;}
+
+/* HEADER & FOOTER */
+header { width: 1440px; height: 103.96px; display: flex; justify-content: space-between; align-items: center; padding: 0 80px; background-color: #fff; border-bottom: 1px solid #E9E9E9;}
+.logo img { height: 62px; }
+nav ul { display: flex; list-style: none; gap: 60px; }
+nav a { text-decoration: none; color: #333333; font-size: 16px; font-weight: 500; position: relative; padding-bottom: 8px; transition: color 0.3s ease; }
+nav a.active-home { color: #27B4F5; font-weight: 700; }
+nav a.active-home::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #27B4F5; }
+nav a.active-mentoring { color: #2AAA5D; font-weight: 700; }
+nav a.active-mentoring::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #2AAA5D; }
+nav a.active-exhibition { color: #FF9A23; font-weight: 700; }
+nav a.active-exhibition::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #FF9A23; }
+nav a.active-notice { color: #F16449; font-weight: 700; }
+nav a.active-notice::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #F16449; }
+
+footer { width: 1440px; height: 289px; background-color: #f6f6f6; padding: 50px 70px; display: flex; flex-direction: column; justify-content: space-between; border-top: 1px solid #eaeaea; }
+.footer-top { display: flex; justify-content: space-between; }
+.footer-left .footer-logo { margin-bottom: 8px; }
+.footer-left .footer-logo img { height: 58px; }
+.footer-left p { font-size: 12px; color: #666; line-height: 1.6; }
+.footer-right { display: flex; gap: 80px; }
+.footer-info-block h4 { font-size: 15px; font-weight: 700; color: #333; margin-bottom: 15px; }
+.footer-info-block p { font-size: 14px; color: #666; margin-bottom: 8px; }
+.footer-bottom { text-align: center; border-top: 1px solid #e0e0e0; padding-top: 25px; font-size: 13px; color: #888; }
+
+/* Notice Main 설정 */
+.notice-main { padding: 60px 0; display: flex; flex-direction: column; align-items: center; }
+
+/* ================= SECTION 1 : 헤더 타이틀 ================= */
+.notice-header { width: 1120px; margin-bottom: 50px; }
+.notice-header .sub-label { color: #F16449; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; display: block; margin-bottom: 10px; }
+.notice-header h2 { font-size: 32px; font-weight: 800; color: #222; margin-bottom: 16px; }
+.notice-header p { font-size: 18px; color: #666; line-height: 1.6; }
+
+/* ================= SECTION 2 : 검색 및 필터 ================= */
+.notice-search { margin-bottom: 30px; }
+.search-bar-wrap { 
+    width: 1120px; height: 77.19px; 
+    background-color: #F4F4F4; border-radius: 12px; 
+    display: flex; align-items: center; justify-content: space-between; 
+    padding: 0 30px; 
+}
+
+/* 박스 자체에 흰색 배경과 사이즈를 부여하여 아이콘을 감싸게 수정 */
+.search-input-box { 
+    display: flex; align-items: center; gap: 12px; 
+    width: 740px; height: 45.19px; 
+    background-color: #ffffff; border-radius: 8px; 
+    padding: 0 20px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.search-icon { width: 18px; height: 18px; opacity: 0.6; }
+
+/* 내부 input은 투명하고 선 없게 처리 */
+.search-input { 
+    flex: 1; height: 100%; 
+    background-color: transparent; border: none; 
+    font-size: 15px; font-family: 'Pretendard'; outline: none;
+}
+.search-input::placeholder { color: #aaa; }
+
+.filter-tags { display: flex; gap: 8px; }
+.filter-btn { 
+    background-color: #fff; border: 1px solid #e0e0e0; 
+    padding: 8px 16px; border-radius: 8px; font-family: 'Pretendard'; 
+    font-size: 12px; font-weight: 600; color: #555; cursor: pointer; transition: 0.3s; 
+}
+.filter-btn:hover { background-color: #f9f9f9; }
+.filter-btn.active { color: #222; border-color: #222; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+/* ================= SECTION 3 : 게시판 ================= */
+.notice-board { width: 1120px; margin-bottom: 60px; background-color: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); padding: 0 30px;}
+.board-container { width: 100%; border-top: 1px solid #333; }
+.board-row { display: grid; grid-template-columns: 80px 140px 1fr 120px 80px; align-items: center; text-align: center; border-bottom: 1px solid #eee; padding: 20px 0; }
+.board-header { font-weight: 700; color: #333; font-size: 15px; background-color: #fff; border-bottom: 1px solid #ddd; }
+.col-num { font-size: 14px; color: #666; }
+.col-category .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge.black { background-color: #333; color: #fff; }
+.col-title { text-align: left; font-size: 15px; font-weight: 500; }
+.col-title a { text-decoration: none; color: #333; transition: color 0.2s; cursor: pointer; }
+.col-title a:hover { color: #F16449; text-decoration: underline; }
+.col-date { font-size: 14px; color: #888; }
+.col-views { font-size: 14px; color: #888; }
+
+/* 페이지네이션 */
+.pagination { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 40px 0 20px 0; }
+.page-num, .page-arrow { 
+    background: #fff; border: 1px solid #ddd; width: 36px; height: 36px; 
+    border-radius: 8px; font-family: 'Pretendard'; font-size: 14px; color: #555; 
+    cursor: pointer; transition: 0.2s; 
+}
+.page-num:hover, .page-arrow:hover { background: #f5f5f5; }
+.page-num.active { background-color: #F16449; color: #fff; border-color: #F16449; font-weight: 700; }
+
+/* ================= SECTION 4 : 하단 배너 ================= */
+.notice-banners { width: 1120px; display: flex; gap: 30px; }
+.banner-card { 
+    flex: 1; background-color: #333333; border-radius: 16px; 
+    padding: 50px 40px; display: flex; flex-direction: column; 
+    justify-content: space-between; align-items: flex-start; height: 260px;
+}
+.banner-card h3 { font-size: 26px; font-weight: 800; color: #ffffff; margin-bottom: 12px; }
+.banner-card p { font-size: 15px; color: #bbbbbb; line-height: 1.5; }
+.banner-btn { 
+    display: inline-block; background-color: #ffffff; color: #F16449; 
+    text-decoration: none; font-size: 15px; font-weight: 800; 
+    padding: 14px 28px; border-radius: 30px; margin-top: auto; transition: 0.3s;
+}
+.banner-btn:hover { background-color: #f1f1f1; transform: translateY(-3px); }

@@ -1,0 +1,130 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Pretendard', sans-serif; background-color: #ffffff; color: #333; }
+.wrap { width: 1440px; margin: 0 auto; background-color: #fff;}
+
+/* HEADER & FOOTER */
+header { width: 1440px; height: 103.96px; display: flex; justify-content: space-between; align-items: center; padding: 0 80px; background-color: #fff; border-bottom: 1px solid #E9E9E9;}
+.logo img { height: 62px; }
+nav ul { display: flex; list-style: none; gap: 60px; }
+nav a { text-decoration: none; color: #333333; font-size: 16px; font-weight: 500; position: relative; padding-bottom: 8px; transition: color 0.3s ease; }
+nav a.active-home { color: #27B4F5; font-weight: 700; }
+nav a.active-home::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #27B4F5; }
+nav a.active-mentoring { color: #2AAA5D; font-weight: 700; }
+nav a.active-mentoring::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #2AAA5D; }
+nav a.active-exhibition { color: #FF9A23; font-weight: 700; }
+nav a.active-exhibition::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #FF9A23; }
+nav a.active-notice { color: #F16449; font-weight: 700; }
+nav a.active-notice::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #F16449; }
+
+footer { width: 1440px; height: 289px; background-color: #f6f6f6; padding: 50px 70px; display: flex; flex-direction: column; justify-content: space-between; border-top: 1px solid #eaeaea; }
+.footer-top { display: flex; justify-content: space-between; }
+.footer-left .footer-logo { margin-bottom: 8px; }
+.footer-left .footer-logo img { height: 58px; }
+.footer-left p { font-size: 12px; color: #666; line-height: 1.6; }
+.footer-right { display: flex; gap: 80px; }
+.footer-info-block h4 { font-size: 15px; font-weight: 700; color: #333; margin-bottom: 15px; }
+.footer-info-block p { font-size: 14px; color: #666; margin-bottom: 8px; }
+.footer-bottom { text-align: center; border-top: 1px solid #e0e0e0; padding-top: 25px; font-size: 13px; color: #888; }
+
+/* COMMON SECTION STYLES */
+main { padding: 0; }
+section { padding: 96px 80px; width: 1440px; }
+.section-header { margin-bottom: 40px; }
+.section-header h2 { font-size: 36px; font-weight: 700; margin-bottom: 7px; color: #222; }
+.section-header p { font-size: 14px; color: #777; }
+.section-header.center { text-align: center; }
+.hidden { display: none !important; }
+
+/* ================= SECTION 1 : 비교과 프로그램 ================= */
+.section1 { background-color: #ffffff; }
+.program-cards { display: flex; gap: 30px; }
+.program-card { flex: 1; border: 1px solid #EAEAEA; border-radius: 12px; padding: 50px 40px; text-decoration: none; color: inherit; background-color: #FAFAFA; transition: all 0.3s ease; display: block; }
+.program-card h3 { font-size: 22px; font-weight: 700; margin: 20px 0 15px 0; transition: color 0.3s; }
+.program-card p { font-size: 15px; color: #666; line-height: 1.6; transition: color 0.3s; }
+.icon-mentoring { width: 33px; height: 24px; transition: filter 0.3s; }
+.icon-exhibition { width: 24px; height: 31.5px; transition: filter 0.3s; }
+.program-card.mentoring h3 { color: #2AAA5D; }
+.program-card.mentoring:hover { background-color: #2AAA5D; border-color: #2AAA5D; transform: translateY(-5px); box-shadow: 0 10px 20px rgba(42, 170, 93, 0.15); }
+.program-card.mentoring:hover h3, .program-card.mentoring:hover p { color: #ffffff; }
+.program-card.mentoring:hover .icon-mentoring { filter: brightness(0) invert(1); }
+.program-card.exhibition h3 { color: #FF9A23; }
+.program-card.exhibition:hover { background-color: #FF9A23; border-color: #FF9A23; transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255, 154, 35, 0.15); }
+.program-card.exhibition:hover h3, .program-card.exhibition:hover p { color: #ffffff; }
+.program-card.exhibition:hover .icon-exhibition { filter: brightness(0) invert(1); }
+
+/* ================= SECTION 2 : 비교과 활동 아카이브 ================= */
+.section2 { background-color: #F8F8F8; }
+.section-header.with-toggle { display: flex; justify-content: space-between; align-items: flex-end; }
+.toggle-switch { display: flex; background: #EAEAEA; border-radius: 40px; padding: 4px; }
+.toggle-switch button { border: none; background: transparent; padding: 10px 24px; font-family: 'Pretendard'; font-size: 14px; font-weight: 700; color: #888; border-radius: 40px; cursor: pointer; transition: all 0.3s; }
+.toggle-switch button.active#toggle-mentoring { background: #fff; color: #2AAA5D; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.toggle-switch button.active#toggle-exhibition { background: #fff; color: #FF9A23; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+.archive-carousel-container { position: relative; width: 100%; }
+.archive-grid { display: flex; gap: 24px; width: 100%; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; padding-bottom: 10px; }
+.archive-grid::-webkit-scrollbar { display: none; }
+
+.archive-card { flex: 0 0 357px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #eee; }
+.archive-card .img-box { height: 180.3px; background-color: #d1d1d1; overflow: hidden; }
+.archive-card .img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.archive-card .card-content { padding: 24px; }
+.archive-card .tags { margin-bottom: 12px; display: flex; gap: 8px; }
+.archive-card .tag { font-size: 11px; padding: 4px 8px; border-radius: 20px; font-weight: 600; }
+.archive-card .tag.blue { background-color: #27B4F5; color: #fff; }
+.archive-card .tag.orange { background-color: #FF9A23; color: #fff; }
+.archive-card .tag.black { background-color: #333; color: #fff; }
+.archive-card h4 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #222; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.archive-card .blue-text { font-size: 15px; color: #27B4F5; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.archive-arrow-btn.next {
+    position: absolute; right: -45px; top: 50%; transform: translateY(-50%) scaleX(-1);
+    background: transparent; border: none; cursor: pointer; z-index: 10; transition: transform 0.2s;
+}
+.archive-arrow-btn.next img { width: 40px; height: 40px; object-fit: contain; pointer-events: none; }
+.archive-arrow-btn.next:hover { transform: translateY(-50%) scaleX(-1) scale(1.1); }
+
+/* ================= SECTION 3 : 유튜브 아카이브 (스크롤바 제거 및 화살표 추가) ================= */
+.section3 { background-color: #ffffff; }
+.section-header.with-link { display: flex; justify-content: space-between; align-items: flex-end; }
+.yt-link-btn { text-decoration: none; color: #27B4F5; border: 1px solid #27B4F5; padding: 12px 24px; border-radius: 40px; font-size: 15px; font-weight: 700; transition: all 0.3s; }
+.yt-link-btn:hover { background-color: #27B4F5; color: #fff; }
+
+/* ★ 문제 해결: overflow: hidden; 삭제 완료 */
+.yt-slider-container { width: 100%; position: relative; margin-bottom: 30px; }
+
+/* 수동 스크롤바 완전 차단 및 부드러운 이동 정의 */
+.yt-slider { 
+    display: flex; gap: 24px; overflow-x: auto; 
+    scroll-behavior: smooth; scrollbar-width: none; 
+    padding-bottom: 10px;
+}
+.yt-slider::-webkit-scrollbar { display: none; }
+
+.yt-card { flex: 0 0 540px; background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; }
+.yt-thumbnail { height: 320px; background-size: cover; background-position: center; position: relative; background-color: #111; }
+.yt-info { padding: 24px; }
+.yt-info h4 { font-size: 20px; margin-bottom: 20px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.play-btn { display: inline-block; background-color: #27B4F5; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 30px; font-size: 14px; font-weight: 700; transition: background 0.2s;}
+.play-btn:hover { background-color: #1a95ce; }
+
+/* 유튜브 전용 우측 화살표 스타일 */
+.yt-arrow-btn.next {
+    position: absolute; right: -45px; top: 50%; transform: translateY(-50%) scaleX(-1);
+    background: transparent; border: none; cursor: pointer; z-index: 10; transition: transform 0.2s;
+}
+.yt-arrow-btn.next img { width: 40px; height: 40px; object-fit: contain; pointer-events: none; }
+.yt-arrow-btn.next:hover { transform: translateY(-50%) scaleX(-1) scale(1.1); }
+
+/* ================= SECTION 4 : 프로세스 ================= */
+.section4 { background-color: #FAFAFA; }
+.process-container { display: flex; justify-content: space-between; align-items: flex-start; position: relative; max-width: 900px; margin: 60px auto 0 auto; }
+.process-line { position: absolute; top: 104px; left: 10%; right: 10%; height: 2px; background-color: #CBE6F6; z-index: 1; }
+.process-step { display: flex; flex-direction: column; align-items: center; z-index: 2; width: 33.33%;}
+.step-label { color: #27B4F5; font-size: 14px; font-weight: 800; margin-bottom: 20px; line-height: 1;}
+.step-circle { width: 140px; height: 140px; background-color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.06); margin-bottom: 24px; }
+.step-title { font-size: 20px; font-weight: 800; color: #333; }
+.icon-participate { width: 25px; height: 20.5px; }
+.icon-survey { width: 25px; height: 25px; }
+.icon-point { width: 27.5px; height: 20px; }

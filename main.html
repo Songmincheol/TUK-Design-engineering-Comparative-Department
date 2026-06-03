@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>한국공학대학교 디자인공학부 - Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="intro.html"><img src="디자인공학부 로고.png" alt="디자인공학부 로고"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html" class="active-home">Home</a></li>
+                    <li><a href="sub1.html">Mentoring</a></li>
+                    <li><a href="sub2.html">Exhibition</a></li>
+                    <li><a href="sub3.html">Notice</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section1">
+                <div class="section-header">
+                    <h2>디자인공학부 비교과 프로그램</h2>
+                    <p>디자인공학부에서 진행하는 비교과 프로그램에 대한 정보를 확인하세요.</p>
+                </div>
+                <div class="program-cards">
+                    <a href="sub1.html" class="program-card mentoring">
+                        <div class="card-icon">
+                            <img src="멘토링 아이콘.png" alt="멘토링" class="icon-mentoring">
+                        </div>
+                        <h3>멘토링 프로그램</h3>
+                        <p>선배들의 실전 꿀팁부터 툴 사용법까지, 1:1 밀착 케어로 전공 지식의 갈증을 해소하세요.<br>초보자도 안심하고 시작하는 맞춤 가이드.</p>
+                    </a>
+                    <a href="sub2.html" class="program-card exhibition">
+                        <div class="card-icon">
+                            <img src="과제전 아이콘.png" alt="과제전" class="icon-exhibition">
+                        </div>
+                        <h3>과제전 & 학술대회</h3>
+                        <p>네트워킹의 장에서 동료들의 작품을 감상하고 전문가의 피드백을 받아보세요.<br>당신의 프로젝트가 세상 밖으로 나오는 첫 걸음입니다.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="section-header with-toggle">
+                    <div>
+                        <h2>비교과 활동 아카이브</h2>
+                        <p>지난 프로젝트와 멘토링의 기록을 확인하세요.</p>
+                    </div>
+                    <div class="toggle-switch">
+                        <button id="toggle-mentoring" class="active">Mentoring</button>
+                        <button id="toggle-exhibition">Exhibition</button>
+                    </div>
+                </div>
+
+                <div class="archive-carousel-container" id="mentoring-wrapper">
+                    <div class="archive-grid" id="mentoring-grid">
+                        <div class="archive-card">
+                            <div class="img-box"><img src="멘토링2025.png" alt="멘토링"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag blue">#멘토링</span><span class="tag black">#Fusion360</span></div>
+                                <h4>2025 디자인공학부 멘토링: D:M</h4>
+                                <p class="blue-text">지드래곤 아닙니다</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="멘토링2024.png" alt="멘토링"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag blue">#멘토링</span><span class="tag black">#Figma</span></div>
+                                <h4>2024 디자인공학부 멘토링: GUI:DE</h4>
+                                <p class="blue-text">디짱</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="멘토링2023.png" alt="멘토링"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag blue">#멘토링</span><span class="tag black">#Figma</span></div>
+                                <h4>2023 디자인공학부 멘토링: Di:tto</h4>
+                                <p class="blue-text">피그마마스터즈</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="과거 멘토링2.png" alt="멘토링"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag blue">#멘토링</span><span class="tag black">#Keyshot</span></div>
+                                <h4>2025 디자인공학부 멘토링: D:M</h4>
+                                <p class="blue-text">Keylight</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="과거 멘토링5.jpg" alt="멘토링"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag blue">#멘토링</span><span class="tag black">#NX10.0</span></div>
+                                <h4>2025 디자인공학부 멘토링: D:M</h4>
+                                <p class="blue-text">트랄라레오 트랄라라라</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="과거 멘토링6.jpg" alt="멘토링"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag blue">#멘토링</span><span class="tag black">#Cinema4D</span></div>
+                                <h4>2025 디자인공학부 멘토링: D:M</h4>
+                                <p class="blue-text">C4D:M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="archive-arrow-btn next" id="archive-mentor-next">
+                        <img src="화살표.png" alt="다음">
+                    </button>
+                </div>
+
+                <div class="archive-carousel-container hidden" id="exhibition-wrapper">
+                    <div class="archive-grid" id="exhibition-grid">
+                        <div class="archive-card">
+                            <div class="img-box"><img src="2025과제전 1등.jpg" alt="과제전"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag orange">#과제전</span><span class="tag black">#Arduino</span></div>
+                                <h4>2025 디자인공학부 학술대회: NO:DE</h4>
+                                <p class="blue-text">Zero 제습기</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="2024과제전 1등.jpg" alt="과제전"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag orange">#과제전</span><span class="tag black">#PhysicalComputing</span></div>
+                                <h4>2024 디자인공학부 과제전: &(잠재력)</h4>
+                                <p class="blue-text">3Dmax 오토바이 모델링</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="2025과제전 2등.jpg" alt="과제전"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag orange">#과제전</span><span class="tag black">#제품디자인</span></div>
+                                <h4>2025 디자인공학부 학술대회: NO:DE</h4>
+                                <p class="blue-text">모바일 게임 '3D 고양이' 식탁 모델링</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="2025과제전 3등.jpg" alt="과제전"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag orange">#과제전</span><span class="tag black">#3D모델링</span></div>
+                                <h4>2025 디자인공학부 학술대회: NO:DE</h4>
+                                <p class="blue-text">스프레이건 리디자인</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="2024과제전 2등.jpg" alt="과제전"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag orange">#과제전</span><span class="tag black">#인터페이스</span></div>
+                                <h4>2024 디자인공학부 과제전: &(잠재력)</h4>
+                                <p class="blue-text">모듈형 청소 로봇 PANG</p>
+                            </div>
+                        </div>
+                        <div class="archive-card">
+                            <div class="img-box"><img src="2024과제전 3등.jpg" alt="과제전"></div>
+                            <div class="card-content">
+                                <div class="tags"><span class="tag orange">#과제전</span><span class="tag black">#UI/UX</span></div>
+                                <h4>2024 디자인공학부 과제전: &(잠재력)</h4>
+                                <p class="blue-text">JART 웹사이트 UIUX 리디자인</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="archive-arrow-btn next" id="archive-ex-next">
+                        <img src="화살표.png" alt="다음">
+                    </button>
+                </div>
+            </section>
+
+            <section class="section3">
+                <div class="section-header with-link">
+                    <div>
+                        <h2>디자인공학부 유튜브 아카이브</h2>
+                        <p>디자인공학부의 비교과 프로그램과 전공에 관련된 다양한 활동을 영상으로 만나보세요.</p>
+                    </div>
+                    <a href="https://www.youtube.com/@tukoreadesign" target="_blank" class="yt-link-btn">YouTube 채널 바로가기</a>
+                </div>
+
+                <div class="yt-slider-container">
+                    <div class="yt-slider" id="yt-slider">
+                        <div class="yt-card">
+                            <div class="yt-thumbnail" style="background-image: url('유튜브 썸네일(2024졸업전시).png');"></div>
+                            <div class="yt-info">
+                                <h4>2024학년도 한국공학대학교 디자인공학부 졸업전시회</h4>
+                                <a href="https://youtu.be/xIz_MkIGTXI?si=7M-Rv4rKrjuhDklt" target="_blank" class="play-btn">▶ 영상 보기</a>
+                            </div>
+                        </div>
+                        <div class="yt-card">
+                            <div class="yt-thumbnail" style="background-image: url('유튜브 썸네일(2024과제전).png');"></div>
+                            <div class="yt-info">
+                                <h4>[2024 디자인공학부 과제전] 한해를 갈(?)아 넣은 디자인공학부 학생들의 결과물들 총집합!</h4>
+                                <a href="https://youtu.be/RGV2l1ae4WI?si=VnNbfAa9Dv41UIzO" target="_blank" class="play-btn">▶ 영상 보기</a>
+                            </div>
+                        </div>
+                        <div class="yt-card">
+                            <div class="yt-thumbnail" style="background-image: url('유튜브 썸네일(2025졸업전시).png');"></div>
+                            <div class="yt-info">
+                                <h4>EP 01. 2026 디자인공학부 졸업전시회</h4>
+                                <a href="https://youtu.be/BRfV-kLfusg?si=xq_mNwyOvspdOnRu" target="_blank" class="play-btn">▶ 영상 보기</a>
+                            </div>
+                        </div>
+                        <div class="yt-card">
+                            <div class="yt-thumbnail" style="background-image: url('유튜브 썸네일(2025과제전).png');"></div>
+                            <div class="yt-info">
+                                <h4>Ep 02. 2025 디자인공학부 학술대회</h4>
+                                <a href="https://youtu.be/-mVjsnNEAqI?si=XhAyZLRcMfA7tGD6" target="_blank" class="play-btn">▶ 영상 보기</a>
+                            </div>
+                        </div>
+                        <div class="yt-card">
+                            <div class="yt-thumbnail" style="background-image: url('유튜브 썸네일(2025졸업식).png');"></div>
+                            <div class="yt-info">
+                                <h4>2025 전기 디자인공학부 학위수여식</h4>
+                                <a href="https://youtu.be/6Ac4IOKm7UU?si=jzYVNlNnkJGu3_y-" target="_blank" class="play-btn">▶ 영상 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="yt-arrow-btn next" id="yt-next">
+                        <img src="화살표.png" alt="다음">
+                    </button>
+                </div>
+            </section>
+
+            <section class="section4">
+                <div class="section-header center">
+                    <h2>U-CAN+ TIP 포인트 프로세스</h2>
+                    <p>참여 실적에 따라 마일리지 형태로 지급된 포인트, 일정 점수 달성 시 장학금 혜택이 주어집니다.</p>
+                </div>
+                
+                <div class="process-container">
+                    <div class="process-line"></div>
+                    <div class="process-step">
+                        <span class="step-label">STEP 01</span>
+                        <div class="step-circle">
+                            <img src="프로그램 참여.png" alt="프로그램 참여" class="icon-participate">
+                        </div>
+                        <p class="step-title">프로그램 참여</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-label">STEP 02</span>
+                        <div class="step-circle">
+                            <img src="만족도 조사.png" alt="만족도 조사" class="icon-survey">
+                        </div>
+                        <p class="step-title">활동 만족도 조사</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-label">STEP 03</span>
+                        <div class="step-circle">
+                            <img src="포인트.png" alt="TIP 포인트 지급" class="icon-point">
+                        </div>
+                        <p class="step-title">TIP 포인트 지급</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="디자인공학부 로고.png" alt="디자인공학부 로고">
+                    </div>
+                    <p>공학적 정밀함과 디자인적 사고의 융합으로 미래 가치를<br>창조하는 디자인공학부입니다.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-info-block">
+                        <h4>Contact</h4>
+                        <p>TEL : 031-8041-0660</p>
+                        <p>e-Mail : ienvyou79@tukorea.ac.kr</p>
+                    </div>
+                    <div class="footer-info-block">
+                        <h4>Youtube</h4>
+                        <p>한국공학대학교 디자인공학부</p>
+                        <p>www.youtube.com/@tukoreadesign</p>
+                    </div>
+                    <div class="footer-info-block">
+                        <h4>Instagram</h4>
+                        <p>학생회 : @tuk_design</p>
+                        <p>졸업전시회 : @tukd_grad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Design Engineering Department. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
